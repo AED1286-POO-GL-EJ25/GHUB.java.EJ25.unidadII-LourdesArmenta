@@ -8,7 +8,7 @@ public class Alumno extends Persona{
     //Constructores
     //Vacios
     public Alumno(){
-
+        
     }
     //lleno
     public Alumno(String nombre, int edad, String dni, String curso){

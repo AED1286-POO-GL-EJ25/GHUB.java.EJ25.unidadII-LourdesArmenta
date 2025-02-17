@@ -7,10 +7,11 @@ public class Persona{
     
     //Métodos
     //Constructores
-    public Persona(){
-
-    }
+    
     //Vacio
+    public Persona(){
+        
+    }
     //Lleno
     public Persona(String nombre, int edad, String dni){
         this.nombre = nombre;
