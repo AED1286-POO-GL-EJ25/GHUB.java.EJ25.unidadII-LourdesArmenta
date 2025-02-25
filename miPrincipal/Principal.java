@@ -65,6 +65,14 @@ public class Principal {
 
         System.out.println("La suma = "+calculadora.sumar(5.0f, 10.0f,3.0f));
 
+        Forma forma = new Forma();
+
+        System.out.println("Circulo = "+forma.calcularArea(2.5));
+        System.out.println("Triangulo = "+forma.calcularArea(3,2));
+        System.out.println("Cuadrado = "+forma.calcularArea(2.5f));
+
+
+
 
 
 
