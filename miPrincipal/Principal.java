@@ -71,6 +71,28 @@ public class Principal {
         System.out.println("Triangulo = "+forma.calcularArea(3,2));
         System.out.println("Cuadrado = "+forma.calcularArea(2.5f));
 
+        //Crear un objeto
+        /*
+         * Sintaxis para definir una referencia
+         *  NombreClase varReferencia
+         * 
+         * //formato para crear un objeto
+         *   varReferencia = new NombreClase(argumento del constructor)
+         */
+
+        Punto punto1 ; //defino la referencia al objeto
+        punto1 = new Punto(); //creamos el objeto
+
+        Punto punto2;
+        punto2 = new Punto(5,2);
+
+        punto1.setX(2);
+        punto1.setY(5);
+
+        System.out.println(punto1.calcularDistancia(punto2));
+
+
+
 
 
 
