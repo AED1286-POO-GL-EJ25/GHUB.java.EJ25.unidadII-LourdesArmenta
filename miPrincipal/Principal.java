@@ -91,6 +91,12 @@ public class Principal {
 
         System.out.println(punto1.calcularDistancia(punto2));
 
+        punto1.leer();
+        punto2.leer();
+
+        punto1.despliega();
+        punto2.despliega();
+
 
 
 
