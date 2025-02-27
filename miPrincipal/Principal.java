@@ -108,10 +108,6 @@ public class Principal {
         punto1.despliega();
         punto2.despliega();
 
-
-
-     
-
         System.out.println(punto1.calcularDistancia(punto2));
 
        
