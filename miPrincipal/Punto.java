@@ -7,6 +7,8 @@ public class Punto{
 
     //Constructores
     public Punto(){
+        this.x =0;
+        this.y =0;
 
     }
 
@@ -17,16 +19,11 @@ public class Punto{
 
     //Metodos personalizados
     public double calcularDistancia(Punto p){
-        int x1 = this.getX();
-        int x2 = p.getX();
-
-        int y1 = this.getY();
-        int y2 = p.getY();
-
-        //Encontrar el error
-        double distancia = Math.sqrt(Math.pow((x2-x1),2) - Math.pow((y2-y1),2));
-        return  distancia;
-
+        double distancia;
+        distancia = Math.sqrt(Math.pow((p.getX()-this.x),2) + 
+                    Math.pow((p.getY()-this.y),2));
+        return distancia;
+        
     }
     public void leer(){
         
@@ -38,8 +35,8 @@ public class Punto{
         
     }
     public void despliega(){
-        System.out.println("Valor de x:"+this.x);
-        System.out.println("Valor de y:"+this.y);
+        System.out.println("Valor de x:"+getX());
+        System.out.println("Valor de y:"+getY());
            
     }
 

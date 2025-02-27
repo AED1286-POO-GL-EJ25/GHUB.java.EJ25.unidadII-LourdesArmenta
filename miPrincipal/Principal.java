@@ -83,11 +83,34 @@ public class Principal {
         Punto punto1 ; //defino la referencia al objeto
         punto1 = new Punto(); //creamos el objeto
 
-        Punto punto2;
-        punto2 = new Punto(5,2);
+        System.out.println("Valor de x del punto1="+punto1.getX());
+        System.out.println("Valor de y del punto1="+punto1.getY());
 
-        punto1.setX(2);
+        punto1.setX(10);
         punto1.setY(5);
+
+        System.out.println("Valor de x del punto1="+punto1.getX());
+        System.out.println("Valor de y del punto1="+punto1.getY());
+
+
+        Punto punto2;
+        punto2 = new Punto(5,2); //invocando al constructor lleno
+
+        System.out.print("valor de x de punto2 ="+punto2.getX());
+        System.out.println("   Valor de y de punto2 ="+punto2.getY());
+
+        punto1.despliega();
+        punto2.despliega();
+
+        punto1.leer();
+        punto2.leer();
+
+        punto1.despliega();
+        punto2.despliega();
+
+
+
+     
 
         System.out.println(punto1.calcularDistancia(punto2));
 
