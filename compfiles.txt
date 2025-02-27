@@ -13,3 +13,4 @@
 ./miPrincipal/Alumno.java
 ./miPrincipal/Principal.java
 ./miPrincipal/Animal.java
+./miPrincipal/Racional.java
