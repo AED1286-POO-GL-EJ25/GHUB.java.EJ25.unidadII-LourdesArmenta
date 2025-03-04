@@ -1,4 +1,6 @@
 package miPrincipal;
+import paquete1.*;
+
 
 public class Principal {
    
@@ -109,6 +111,20 @@ public class Principal {
         punto2.despliega();
 
         System.out.println(punto1.calcularDistancia(punto2));
+
+        //Uso de la Relacion de Composicion
+
+        Motor motor1 = new Motor("V10",500);
+
+        Automovil auto1= new Automovil("Lexus","LFA",motor1);
+
+        System.out.println("Automovil 1 Marca: "+auto1.getMarca()+" Modelo: "+auto1.getModelo()+
+                            " Motor tipo:"+auto1.getMotor().getTipo()+" Potencia: "+
+                            auto1.getMotor().getPotencia()+" HP");
+
+
+ 
+
 
        
 
