@@ -122,6 +122,30 @@ public class Principal {
                             " Motor tipo:"+auto1.getMotor().getTipo()+" Potencia: "+
                             auto1.getMotor().getPotencia()+" HP");
 
+        //Uso de la relacion de agregacion
+
+        //forma1
+        Monitor monitor1 = new Monitor("IBM",16);
+
+        Computadora compu1 = new Computadora("Lanix","LX1",monitor1);
+
+        System.out.println("Computadora marca: "+compu1.getMarca()+" Modelo: "+compu1.getModelo()+"\n"+
+                           "Monitor marca: "+compu1.getMonitor().getMarca()+
+                           " Tamaño: "+compu1.getMonitor().getTamanio()+" pulgadas");
+        //forma2 
+        Computadora compu2 = new Computadora("HP","mx500",new Monitor("HP",15));
+
+        System.out.println("Computadora marca: "+compu2.getMarca()+" Modelo: "+compu2.getMarca()+"\n"+
+                           "Monitor marca "+compu2.getMonitor().getMarca()+
+                           " Tamaño: "+compu2.getMonitor().getTamanio()+" pulgadas");
+
+
+        
+
+
+
+
+
 
  
 
