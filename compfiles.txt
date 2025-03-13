@@ -17,4 +17,5 @@
 ./miPrincipal/Alumno.java
 ./miPrincipal/Principal.java
 ./miPrincipal/Animal.java
+./miPrincipal/Menu.java
 ./miPrincipal/Racional.java

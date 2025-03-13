@@ -1,12 +1,17 @@
 package miPrincipal;
 import paquete1.*;
 
-
 public class Principal {
    
 
     public static void main(String[] args) {
+        //creando un objeto de tipo Menu
+        Menu menu = new Menu();
+        menu.iniciar();
 
+
+    }
+    /*
         //Crear objetos tipo Persona
         Persona p1 = new Persona(); //invoca al constructor vacio
 
@@ -80,7 +85,8 @@ public class Principal {
          * 
          * //formato para crear un objeto
          *   varReferencia = new NombreClase(argumento del constructor)
-         */
+         **/
+        /*
 
         Punto punto1 ; //defino la referencia al objeto
         punto1 = new Punto(); //creamos el objeto
@@ -139,36 +145,7 @@ public class Principal {
                            "Monitor marca "+compu2.getMonitor().getMarca()+
                            " Tamaño: "+compu2.getMonitor().getTamanio()+" pulgadas");
 
+    */
 
-        
-
-
-
-
-
-
- 
-
-
-       
-
-
-
-
-
-
-
-
-       
-
-
-
-
-
-
-
-
-
-       
-    }
+    
 }
