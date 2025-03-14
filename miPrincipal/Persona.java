@@ -51,4 +51,10 @@ public class Persona{
         this.dni = dni;
     }
 
+    @Override
+    public String toString(){
+        return "Nombre: "+nombre+" Edad:"+this.edad+" DNI:"+this.dni;
+
+    }
+
 }

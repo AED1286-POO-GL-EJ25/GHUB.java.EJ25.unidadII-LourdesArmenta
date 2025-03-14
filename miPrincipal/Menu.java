@@ -8,6 +8,7 @@ import paquete1.Motor;
 import paquete1.Monitor;
 
 public class Menu {
+   
     //constructor vacio
     public Menu(){
 
@@ -23,6 +24,7 @@ public class Menu {
            switch (opcion) {
             case 1:
                 //seleccione la opcion persona
+                this.seleccioneMenuPersona();
                 break;
             case 2:
                 //seleccione la opcion Animal
@@ -157,16 +159,99 @@ public class Menu {
     }
     //metodo personalizado privado que no retorne nada que se llame mostrarMenu
     private void mostrarMenu(){
-        System.out.println("\n--- Menú de Clase ---");
-        System.out.println("1. Persona ");
-        System.out.println("2. Animal ");
-        System.out.println("3. Calculadora");
-        System.out.println("4. Forma");
-        System.out.println("5. Punto");
-        System.out.println("6. Automovil");
-        System.out.println("7. Computadora");
-        System.out.println("0. Salir");
-        System.out.print("Seleccione una opción: ");
+       
+            System.out.println("\n--- Menú de Clase ---");
+            System.out.println("1. Persona ");
+            System.out.println("2. Animal ");
+            System.out.println("3. Calculadora");
+            System.out.println("4. Forma");
+            System.out.println("5. Punto");
+            System.out.println("6. Automovil");
+            System.out.println("7. Computadora");
+            System.out.println("0. Salir");
+            System.out.print("Seleccione una opción: ");
+           
+
+    }
+    private void seleccioneMenuPersona(){
+        Scanner scanner = new Scanner(System.in);
+        int opcion;
+        do{
+            System.out.println("\n--- Menú de Clase Persona---");
+            System.out.println("1. Agregar");
+            System.out.println("2. Eliminar");
+            System.out.println("3. Modificar");
+            System.out.println("4. Consultar");
+            System.out.println();
+            System.err.println("\t0. Salir");
+            System.out.print("Seleccione una opción: ");
+            opcion = scanner.nextInt(); 
+            scanner.nextLine(); // Consumir la nueva línea
+            switch (opcion) {
+                case 1:
+                   //agregar
+                   agregarPersona();
+                   break;
+                case 2:
+                    //eliminar
+                    break;
+                case 3:
+                    //modificar
+                    break;
+                case 4:
+                   //consultar
+                   break;
+                case 0:
+                   return;
+                default:
+                   System.out.println("Opcion invalida...intente de nuevo");
+            }
+
+        } while (opcion !=0);
+    }
+
+    private void agregarPersona(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nombre:");
+        String nombre = scanner.nextLine();
+
+        System.out.print("Edad:");
+        int edad = scanner.nextInt();
+
+        System.out.print("Dni:");
+        String dni = scanner.next();
+
+         //Crear objetos tipo Persona
+         Persona p = new Persona();
+         p.setNombre(nombre);
+         p.setEdad(edad);
+         p.setDni(dni);
+
+         System.out.println("La persona: "+p+" se ha agregado exitosamente");
+         /*
+         Persona p1 = new Persona(); //invoca al constructor vacio
+
+         p1.setNombre("Luis");
+         p1.setEdad(14);
+         p1.setDni("123");
+ 
+         Persona p2 = new Persona("Lilian",15,"Cocina");
+         p2.setNombre("Liliana");
+         p2.setEdad(16);
+         p2.setDni("1111");
+         
+         System.out.println("Nombre de p2 = "+p2.getNombre());
+         System.out.println("Edad de p2 = "+p2.getEdad());
+         System.out.println("Dni de p2 = "+p2.getDni());
+ 
+ 
+         //invocar a los métodos
+ 
+         p1.saludar();
+ 
+         p2.saludar();
+         */
+
 
     }
     
